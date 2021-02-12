@@ -11,9 +11,13 @@ function PlayerList(props) {
         return (
             
             <Player
+                id= {player.id}
+                key={player.id}
                 firstName={player.firstName}
+                lastName = {player.lastName}
                 jerseyNumber={player.jerseyNumber}
                 hobbies={player.hobbies}
+                addFav={props.addFavorite}
                 
             />
            
